@@ -73,65 +73,53 @@
         <div class="hideme container pt-5">
 
             <div class="col align-self-center text-left">
-
                 <h1 class="headlines text-center"><span class="text-line">Headlines</span></h1>
-
                 <br>
-
                 <div class="hideme">
-
                     <p>2017/11/15</p>
-
                     <p>美歐亞非學者齊聚中大　分享先進國際參考電離層模式</p>
-
-                    <p>2017 國際參考電離層（International Reference Ionosphere，簡稱IRI）人才儲訓學校與研討會11月6-17日在中央大學舉行，橫跨美歐亞非27個國家的專家學者齊聚中央大學，分享中大參與福衛三號和七號之成果與貢獻，並向台灣領先的國際參考電離層模式取經。... <a href="http://www.ncu.edu.tw/campus/article/2040" target="_blank"><strong> More Info </strong></a></p>                    
-
+                    <p>2017 國際參考電離層（International Reference Ionosphere，簡稱IRI）人才儲訓學校與研討會11月6-17日在中央大學舉行，橫跨美歐亞非27個國家的專家學者齊聚中央大學，分享中大參與福衛三號和七號之成果與貢獻，並向台灣領先的國際參考電離層模式取經。... 
+                        <a href="http://www.ncu.edu.tw/campus/article/2040" target="_blank">
+                            <strong> More Info </strong>
+                        </a>
+                    </p>                    
                     <hr class="s2"><br>
-
                 </div>                    
 
                 <div class="hideme">
-
                     <p>2017/11/6</p>
-
                     <p>International Reference Ionosphere 2017 Workshop is now holding in the
-
                         National Central University (NCU), Taoyuan, Taiwan, during 6-17
-
                         November 2017 </p>
-
-                    <p>More Info: <a href="https://sites.google.com/view/iri2017workshop-tw/home" target="_blank"><strong> IRI Workshop </strong></a></p>
-
+                    <p>More Info: 
+                        <a href="https://sites.google.com/view/iri2017workshop-tw/home" target="_blank">
+                            <strong> IRI Workshop </strong>
+                        </a>
+                    </p>
                     <hr class="s2"><br>
-
                 </div>
 
                 <div class="hideme">
-
                     <p>2017/10/16</p>
-
                     <p>International Reference Ionosphere 2017 Workshop is held at the
-
                         National Central University (NCU) in Taoyuan, Taiwan, 6-17
-
                         November 2017 (Training session:6-10 Nov. 2017, IRI Workshop:13-17
-
                         Nov. 2017) </p>
 
-                    <p>More Info: <a href="http://www.ss.ncu.edu.tw/%7Ejyliu/pages/IRI_abstract/session.html" target="_blank"><strong>Traning session</strong></a>
-
-                       and           <a href="http://www.ss.ncu.edu.tw/%7Ejyliu/pages/IRI_abstract/program.html" target="_blank"><strong>IRI Workshop </strong></a></p>
-
+                    <p>More Info:
+                        <a href="http://www.ss.ncu.edu.tw/%7Ejyliu/pages/IRI_abstract/session.html" target="_blank">
+                            <strong>Traning session</strong>
+                        </a>
+                        and
+                        <a href="http://www.ss.ncu.edu.tw/%7Ejyliu/pages/IRI_abstract/program.html" target="_blank">
+                            <strong>IRI Workshop</strong>
+                        </a>
+                    </p>
                     <br>
-
                 </div>
-
             </div>
-
         </div>
-
         
-
         <div class="hideme container pb-5">
             <h1 class="headlines text-center"><span class="text-line">Location</span></h1>
             <br>
@@ -156,23 +144,24 @@
         
         <script>
         
-        function myMap() {
-            var mapCanvas = document.getElementById("map");
-            var myCenter = new google.maps.LatLng(24.9678841,121.1929443); 
-            var science4 = new google.maps.LatLng(24.9714917,121.1920186); 
-            var mapOptions = {center: myCenter, zoom: 14};
-            var map = new google.maps.Map(mapCanvas,mapOptions);
-            var marker = new google.maps.Marker({
-            position: science4,
-            animation: google.maps.Animation.BOUNCE
-            });
-
-            // Zoom to 9 when clicking on marker
-            google.maps.event.addListener(marker,'click',function() {
-            map.setZoom(17);
-            map.setCenter(marker.getPosition());
-            });            
-              marker.setMap(map);
+            function myMap() {
+                var mapCanvas = document.getElementById("map");
+                var myCenter = new google.maps.LatLng(24.9678841,121.1929443); 
+                var science4 = new google.maps.LatLng(24.9714917,121.1920186); 
+                var mapOptions = {
+                    center: myCenter, zoom: 14
+                };
+                var map = new google.maps.Map(mapCanvas,mapOptions);
+                var marker = new google.maps.Marker({
+                    position: science4,
+                    //animation: google.maps.Animation.DROP
+                });
+                // Zoom to 9 when clicking on marker
+                google.maps.event.addListener(marker,'click',function() {
+                    map.setZoom(17);
+                    map.setCenter(marker.getPosition());
+                });            
+                marker.setMap(map);
             }
         </script>
 
