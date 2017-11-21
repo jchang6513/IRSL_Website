@@ -1,5 +1,5 @@
 $(function() {    
-    var images = ['1','2','3','4','5'];
+    var images = ['1','2','3','4','5','6','7','8','9','10','11'];
     var num = Math.floor(Math.random() * images.length);
     
     $('.jumbotron').css({'background': 'url(images/jumbotron/k_' + images[num] + '.jpg) no-repeat center'});   
