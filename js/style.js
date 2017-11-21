@@ -1,18 +1,9 @@
 $(function() {    
-    var images = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11'];
+    var images = ['1','2','3','4','5'];
     var num = Math.floor(Math.random() * images.length);
     
-    $('.sm-bg').css({'background': 'linear-gradient(to right, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(images/jumbotron/small_' + images[num] + '.jpg) no-repeat center'});   
-    $('.sm-bg').css({'background-size': 'cover'}); 
-    
-    setTimeout(function() {
-        $('.lg-bg').css({'background': 'linear-gradient(to right, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(images/jumbotron/' + images[num] + '.jpg) no-repeat center'});   
-        $('.lg-bg').css({'background-size': 'cover'});
-    },1500);
-    
-    setTimeout(function() {
-        $('.sm-bg').css({'visibility':'hidden'});
-    },2000); 
+    $('.jumbotron').css({'background': 'url(images/jumbotron/k_' + images[num] + '.jpg) no-repeat center'});   
+    $('.jumbotron').css({'background-size': 'cover'});
     
     setTimeout(function() {
         $('.arrow').css({'visibility':'visible'});
